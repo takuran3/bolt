@@ -4,13 +4,21 @@ body{
 
 .header{
   width: 100%;
-  height: 78px;
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
   z-index: 99;
   background-color: white;
+  position: fixed;
+}
+
+.inner{
+  width: 1100px;
   text-align: center;
+  margin: auto;
+}
+
+.clear:after{
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .bolt_icon{
@@ -35,20 +43,12 @@ body{
   cursor : pointer;
 }
 
-.body_pad{
-  padding-top: 65px;
-}
-
 .main{
   background-color: #f2f2f2;
   text-align: center;
+  padding-top: 78px;
 }
 
-.inner{
-  width: 1100px;
-  text-align: center;
-  margin: 0 auto;
-}
 
 .main_title{
   padding-top: 250px;
@@ -198,7 +198,8 @@ body{
 }
 
 .sns_icon{
-  padding: 30px 72.5px;
+  padding: 30px 0;
+  width: 185px;
   font-size: 40px;
   color: #74cfae;
   margin-top: 200px;
