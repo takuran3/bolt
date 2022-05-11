@@ -46,13 +46,12 @@ body{
 .main{
   background-color: #f2f2f2;
   text-align: center;
-  padding-top: 78px;
+  padding-top: 328px;
+  padding-bottom: 250px;
 }
 
 
 .main_title{
-  padding-top: 250px;
-  margin-bottom: 20px;
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
@@ -60,9 +59,9 @@ body{
 }
 
 .main_subtitle{
-  padding-bottom: 250px;
-  font-size: 30px;
+  margin-top: 20px;
   color: #c0c0c0;
+  font-size: 30px;
 }
 
 .section{
@@ -80,13 +79,13 @@ body{
 
 .sec_title{
   padding-top: 100px;
-  padding-bottom: 35px;
   font-size: 24px;
   color: white;
   font-family: Raleway;
 }
 
 .sec_text{
+  margin-top: 35px;
   width: 650px;
   font-size: 20px;
   color: white;
@@ -96,28 +95,34 @@ body{
   background-color: #f2f2f2;
 }
 
+.art .inner{
+  padding-bottom: 70px;
+}
 
 .art_title{
   font-size: 24px;
-  padding: 60px 0 40px 0;
+  padding-top: 60px;
   font-family: Raleway;
 }
 
 .art_img{
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }
 
-
 .art_img li{
   opacity: 0.7;
-  margin-right: 100px;
-  margin-bottom: 80px;
+  margin-left: 100px;
   transition: 0.3s;
 }
 
-.art_img li:nth-child(3n){
-  margin-right: 0px;
+.art_img li:nth-child(3n+1){
+  margin-left: 0px;
+}
+
+.art_img li:nth-child(n+4){
+  margin-top: 80px;
 }
 
 
@@ -126,8 +131,8 @@ body{
 }
 
 .art_bottom{
-  padding: 10px 0 70px 0;
   position: relative;
+  margin-top: 90px;
 }
 
 .art_text{
@@ -136,7 +141,6 @@ body{
   text-align: center;
   font-size: 20px;
   font-weight: normal;
-  margin-right: 90px;
 }
 
 .art_btn{
@@ -147,6 +151,7 @@ body{
   padding: 14px 20px;
   text-decoration: none;
   transition: 0.3s;
+  margin-left: 90px;
 }
 
 .art_btn:hover{
@@ -158,26 +163,29 @@ body{
   background-color: #4e4e4e;
 }
 
+.skill .inner{
+  padding-bottom: 100px;
+}
+
 .skill_title{
   font-size: 20px;
   color: white;
-  padding: 50px;
   padding-top: 70px;
   font-family: Raleway;
 }
 
 .skill_img{
-  padding-bottom: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
 .skill_img li{
-  padding-right: 180px;
+  margin-left: 180px;
 }
 
-.skill_img li:last-child{
-  padding-right: 0px;
+.skill_img li:first-child{
+  margin-left: 0px;
 }
 
 .skill_img p{
@@ -195,6 +203,7 @@ body{
 .sns_position{
   display: flex;
   justify-content: center;
+  padding: 200px 0;
 }
 
 .sns_icon{
@@ -202,8 +211,6 @@ body{
   width: 185px;
   font-size: 40px;
   color: #74cfae;
-  margin-top: 200px;
-  margin-bottom: 200px;
   text-decoration: none;
   transition: 0.3s;
 }
